@@ -1,4 +1,4 @@
-# Value-Benchmark
+# Few-shot-NER Benchmark
 The repository for the Value Benchmark website
 
 # TODO
