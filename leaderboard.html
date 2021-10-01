@@ -94,13 +94,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true" aria-expanded="true">VALUE</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="retrieval-tab" data-toggle="tab" href="#retrieval" role="tab" aria-controls="retrieval" aria-selected="false" aria-expanded="false">Retrieval</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="false" aria-expanded="false">QA</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="caption-tab" data-toggle="tab" href="#caption" role="tab" aria-controls="caption" aria-selected="false" aria-expanded="false">Captioning</a></li>
+                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true" aria-expanded="true">FewNER</a></li>
                     </ul>
 
                     <br>
@@ -187,100 +181,6 @@
                                     <td><b>67.10</b></td>
                                 </tr>
                             </tbody>
-                            <tfoot></tfoot></table>
-                        </div>
-                        <div class="tab-pane fade" id="retrieval" role="tabpanel" aria-labelledby="home-tab" aria-expanded="false">
-                            <p>For text-to-video retrieval tasks, we report AveR for each task. AveR is the average of R@K (K = 1, 5, 10). The models are ranked by the Mean-Rank, the average of model ranks over 4 retrieval tasks. We break ties using the average of AveRs across 4 tasks.</p>
-                            <table class="table table-hover sortable performanceTable" id="ret_table">
-                            <thead>
-                                <tr>
-                                <th class="sorttable_nosort" scope="col">Rank</th>
-                                <th class="sorttable_nosort" scope="col">Model</th>
-                                <th scope="col"> Mean-Rank</th>
-                                <th scope="col">Ave-Score</th>
-                                <th scope="col">TVR</th>
-                                <th scope="col">How2R</th>
-                                <th scope="col">YC2R</th>
-                                <th scope="col">VATEX-EN-R</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                
-                            <tr><th scope="row"><p class="rank">1</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(AT-&gt;ST, PT+FT)</b><p class="institution">VALUE baseline</p></td><td><b>1.25</b></td><td><b>30.22</b></td><td><b>13.56</b></td><td><b>3.95</b></td><td><b>54.28</b></td><td><b>49.09</b></td></tr><tr><th scope="row"><p class="rank">2</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(ST, PT+FT)</b><p class="institution">VALUE baseline</p></td><td><b>1.25</b></td><td><b>30.08</b></td><td><b>13.70</b></td><td><b>3.38</b></td><td><b>56.59</b></td><td><b>46.66</b></td></tr><tr><th scope="row"><p class="rank">3</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(AT-&gt;ST, FT-only)</b><p class="institution">VALUE baseline</p></td><td><b>2.00</b></td><td><b>29.21</b></td><td><b>12.40</b></td><td><b>3.61</b></td><td><b>50.93</b></td><td><b>49.91</b></td></tr><tr><th scope="row"><p class="rank">4</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(ST, FT-only)</b><p class="institution">VALUE baseline</p></td><td><b>3.00</b></td><td><b>25.08</b></td><td><b>8.81</b></td><td><b>2.13</b></td><td><b>42.37</b></td><td><b>47.02</b></td></tr></tbody>
-                            <tfoot></tfoot></table>
-                        </div>
-                        <div class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab" aria-expanded="false">
-                            <p>For video question answering tasks, we report accuracy on each task. The models are ranked by the Mean-Rank, the average of model ranks over 4 QA tasks. We break ties using the average of accuracies across 4 tasks.</p>
-                            <table class="table table-hover sortable performanceTable" id="qa_table">
-                            <thead>
-                                <tr>
-                                <th class="sorttable_nosort" scope="col">Rank</th>
-                                <th class="sorttable_nosort" scope="col">Model</th>
-                                <th scope="col">Mean-Rank</th>
-                                <th scope="col">Ave-Score</th>
-                                <th scope="col">TVQA</th>
-                                <th scope="col">How2QA</th>
-                                <th scope="col">VIOLIN</th>
-                                <th scope="col">VLEP</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <p class="rank">-</p>
-                                        <span class="date badge badge-secondary">06/07/2021</span>
-                                    </th>
-                                    <td style="word-break:break-word;">
-                                        <b>Human</b>
-                                        <p class="institution">VALUE baseline</p>
-                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
-                                    </td>
-                                    <td><b>-</b></td>
-                                    <td><b>90.41</b></td>
-
-                                    <td><b>89.41</b></td>
-                                    <td><b>90.32</b></td>
-                                    <td><b>91.39</b></td>
-                                    <td><b>90.50</b></td>
-                                </tr>
-
-                            <tr><th scope="row"><p class="rank">1</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(AT-&gt;ST, PT+FT)</b><p class="institution">VALUE baseline</p></td><td><b>1.00</b></td><td><b>71.50</b></td><td><b>74.83</b></td><td><b>74.60</b></td><td><b>67.18</b></td><td><b>69.37</b></td></tr><tr><th scope="row"><p class="rank">2</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(AT-&gt;ST, FT-only)</b><p class="institution">VALUE baseline</p></td><td><b>2.50</b></td><td><b>70.44</b></td><td><b>74.38</b></td><td><b>71.88</b></td><td><b>66.80</b></td><td><b>68.68</b></td></tr><tr><th scope="row"><p class="rank">3</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(ST, PT+FT)</b><p class="institution">VALUE baseline</p></td><td><b>2.75</b></td><td><b>69.91</b></td><td><b>74.52</b></td><td><b>73.82</b></td><td><b>64.19</b></td><td><b>67.10</b></td></tr><tr><th scope="row"><p class="rank">4</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(ST, FT-only)</b><p class="institution">VALUE baseline</p></td><td><b>3.75</b></td><td><b>65.50</b></td><td><b>71.35</b></td><td><b>69.59</b></td><td><b>64.30</b></td><td><b>56.77</b></td></tr></tbody>
-                            <tfoot></tfoot></table>
-                        </div>
-                        <div class="tab-pane fade" id="caption" role="tabpanel" aria-labelledby="caption-tab" aria-expanded="false">
-                            <p>For video captioning tasks, we report CIDEr-D on each task. The models are ranked by the Mean-Rank, the average of model ranks over 4 captioning tasks. We break ties using the average of CIDEr-D scores across 3 tasks.</p>
-                            <table class="table table-hover sortable performanceTable" id="caption_table">
-                            <thead>
-                                <tr>
-                                <th class="sorttable_nosort" scope="col">Rank</th>
-                                <th class="sorttable_nosort" scope="col">Model</th>
-                                <th scope="col">Mean-Rank</th>
-                                <th scope="col">Ave-Score</th>
-                                <th scope="col">TVC</th>
-                                <th scope="col">YC2C</th>
-                                <th scope="col">VATEX-EN-C</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <p class="rank">-</p>
-                                        <span class="date badge badge-secondary">06/07/2021</span>
-                                    </th>
-                                    <td style="word-break:break-word;">
-                                        <b>Human</b>
-                                        <p class="institution">VALUE baseline</p>
-                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
-                                    </td>
-                                    <td><b>-</b></td>
-                                    <td><b>-</b></td>
-
-                                    <td><b>62.89</b></td>
-                                    <td><b>-</b></td>
-                                    <td><b>62.66</b></td>
-                                
-                            </tr><tr><th scope="row"><p class="rank">1</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(ST, PT+FT)</b><p class="institution">VALUE baseline</p></td><td><b>1.00</b></td><td><b>75.52</b></td><td><b>51.04</b></td><td><b>120.22</b></td><td><b>55.30</b></td></tr><tr><th scope="row"><p class="rank">2</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(AT-&gt;ST, PT+FT)</b><p class="institution">VALUE baseline</p></td><td><b>1.67</b></td><td><b>75.52</b></td><td><b>48.13</b></td><td><b>121.89</b></td><td><b>56.54</b></td></tr><tr><th scope="row"><p class="rank">3</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(AT-&gt;ST, FT-only)</b><p class="institution">VALUE baseline</p></td><td><b>2.00</b></td><td><b>72.71</b></td><td><b>49.41</b></td><td><b>110.63</b></td><td><b>58.09</b></td></tr><tr><th scope="row"><p class="rank">4</p><span class="date badge badge-secondary">06/07/2021</span></th><td style="word-break:break-word;"><b>HERO</b> <br> <b>(ST, FT-only)</b><p class="institution">VALUE baseline</p></td><td><b>2.00</b></td><td><b>72.06</b></td><td><b>50.30</b></td><td><b>109.89</b></td><td><b>55.98</b></td></tr></tbody>
                             <tfoot></tfoot></table>
                         </div>
                     </div>
